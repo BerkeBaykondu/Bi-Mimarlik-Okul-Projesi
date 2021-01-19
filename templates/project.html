@@ -1,0 +1,26 @@
+{% load static %}
+<section class="Project-Detail">
+  <div class="project-header">
+    <h2>Tamamlanan Projelerimiz</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reiciendis earum, vitae fuga fugit illum maxime magni obcaecati ab blanditiis a magnam, aperiam ullam velit nisi cumque adipisci repellat. Quae.</p>
+  </div>
+
+  <div class="project-cards">
+    <ul>
+      {% for project in projects %}
+
+      <li>
+        <a href="#">
+          <img src="{{ project.image.url }}" alt="">
+          <span class="inner">
+          <span class="town" style="--bgcolor: {% if project.color == false %} #000 {% else %} {{project.color}} {% endif %}">{{ project.city }}</span>
+            <span class="title">{{ project.project}}</span>
+            <span class="description">{{ project.projectDescription }}</span>
+          </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</section>

@@ -1,0 +1,45 @@
+{% load static %}
+<a name="About"></a>
+<!-- About Start -->
+<section class="About">
+  {% for abt in about %}
+  <div class="aboutBox">
+    <div class="icon">    
+      <img src="{{ abt.icon.url }}" alt="">
+    </div>
+    <div class="about-info">
+      <h3>{{ abt.title }}</h3>
+      <p>{{ abt.description }}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+  <!-- <div class="aboutBox">
+    <div class="icon">
+      <img src="{% static 'media/icons/sun.svg' %}" alt="">
+    </div>
+    <div class="about-info">
+      <h3>Başlık BAşlık</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt veritatis accusantium odit perferendis, itaque veniam iure enim sunt officia officiis deleniti voluptates ut et, laudantium nesciunt libero sed laborum cum?</p>
+    </div>
+  </div>
+  <div class="aboutBox">
+    <div class="icon">
+      <img src="{% static 'media/icons/tree-silhouette.svg' %}" alt="">
+    </div>
+    <div class="about-info">
+      <h3>Başlık BAşlık</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt veritatis accusantium odit perferendis, itaque veniam iure enim sunt officia officiis deleniti voluptates ut et, laudantium nesciunt libero sed laborum cum?</p>
+    </div>
+  </div>
+  <div class="aboutBox">
+    <div class="icon">
+      <img src="{% static 'media/icons/wind-energy.svg' %}" alt="">
+    </div>
+    <div class="about-info">
+      <h3>Başlık BAşlık</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt veritatis accusantium odit perferendis, itaque veniam iure enim sunt officia officiis deleniti voluptates ut et, laudantium nesciunt libero sed laborum cum?</p>
+    </div>
+  </div> -->
+</section>
+<!-- About End-->

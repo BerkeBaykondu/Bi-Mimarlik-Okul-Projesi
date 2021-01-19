@@ -1,0 +1,38 @@
+{% load static %}
+<a name="Contact"></a>
+<!-- Contact Start -->
+<section class="Contact">
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12029.114761435485!2d29.0510399!3d41.0847571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd6495985c46cd0e!2zQm_En2F6acOnaSDDnG5pdmVyc2l0ZXNp!5e0!3m2!1str!2str!4v1610459652216!5m2!1str!2str" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+  <div class="ContactUs">
+    
+    <div class="contact-info">
+      <h1>İletişim</h1>
+      <ul>
+        <li>
+          <img src="{% static 'media/icons/email.svg' %}" alt="">
+          <a href="mailto:{{setting.email}}">
+            Mail 
+            <p>{{setting.email}}</p>
+          </a>
+        </li>
+        <li>
+          <img src="{% static 'media/icons/phone.svg' %}" alt="">
+          <a href="tel:{{setting.phone}}">
+            Telefon 
+            <p>{{setting.phone}}</p>
+          </a>
+        </li>
+        <li>
+          <img src="{% static 'media/icons/pin.svg' %}" alt="">
+          <a href="https://goo.gl/maps/MjLsHvE8MpXQJzmx5" target="_blank">
+            Adres 
+            <p>{{setting.address}}</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Contact End-->

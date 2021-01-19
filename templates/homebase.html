@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {%include 'head.html' %}
+
+  {% block head %} {% endblock %}
+</head>
+<body>
+  
+  {% block hero-section %} {% endblock %}
+  
+  {%include 'navigation.html' %}
+  {% block projects %} {% endblock %}
+  {% block about %} {% endblock %}
+  {% block contact %} {% endblock %}
+
+  {%include 'footer.html' %}
+</body>
+</html>
