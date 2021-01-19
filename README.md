@@ -2,6 +2,10 @@
 
 [GitHub Link](https://github.com/BerkeBaykondu/Bi-Mimarlik-Proje)
 
+### Admin Panel
+Username: bi-mimarlik
+Password: bi-mimarlik
+
 ## Model Samples
 
 ```javascript
